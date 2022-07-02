@@ -1,0 +1,72 @@
+/*
+===============  
+faq
+===============  
+*/
+
+.faq {
+  background-color: var(--clr-container);
+  margin-top: 2rem;
+  padding: 1rem;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+.title-button-container {
+  display: flex;
+  column-gap: 1rem;
+  justify-content: space-between;
+}
+
+.title-button-container h2 {
+  font-size: 1rem;
+  letter-spacing: 1px;
+  color: var(--clr-heading);
+  align-self: center;
+
+  margin: 0px;
+}
+
+.title-button-container button {
+  font-size: 1rem;
+  color: var(--clr-btn);
+  background-color: var(--clr-btn-background);
+  padding: 0.5rem 0.7rem;
+  border-radius: 50%;
+  border: none;
+  align-self: center;
+  display: block;
+}
+
+.faq p {
+  color: var(--clr-info);
+  margin: 0px;
+  margin-top: 1rem;
+}
+
+/*
+===============  
+media query
+===============  
+*/
+
+@media (min-width: 1000px) {
+  .faq:nth-of-type(1) {
+    margin-top: 0px;
+  }
+
+  .title-button-container h2 {
+    font-size: 1.2rem;
+  }
+
+  .faq p {
+    font-size: 1.1rem;
+    line-height: 1.3;
+  }
+
+  .title-button-container button {
+    padding: 0px;
+    width: 30px;
+    height: 30px;
+  }
+}
